@@ -7,7 +7,14 @@ import { projectsData } from "../../data.js";
 export default function Home() {
   return (
     <>
-      <Image src={bg} alt="background-image" fill className="w-full h-full object-cover object-center opacity-10" />
+      <div className="fixed top-0 w-full h-full">
+        <Image
+          src={bg}
+          alt="background-image"
+          layout="fill"
+          className="object-cover object-center opacity-20"
+        />
+      </div>
       <ProjectList projects={projectsData} />
      
     </>

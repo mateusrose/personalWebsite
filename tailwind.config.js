@@ -15,6 +15,7 @@ module.exports = {
         foreground: "rgb(var(--foreground))",
         muted: "rgb(var(--muted))",
         accent: "rgb(var(--accent))",
+        accentdark: "rgb(var(--accentdark))",
       },
       backgroundImage: {
        "light-radial": "radial-gradient(rgba(147, 112, 219, 0.5) 0%, rgba(75, 0, 130, 1) 50%)",

@@ -43,7 +43,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    name: "Cyberpunk theme personal website",
+    name: "Cyberpunk theme personal website @ making",
     description:
       "Project to experiment with tools I havent used before, like tailwindcss, nextjs and threejs.",
     date: "2024-05",
@@ -51,7 +51,7 @@ export const projectsData = [
   },
   {
     id: 5,
-    name: "Block Split or Steal",
+    name: "Block Split or Steal @ at making",
     description:
       "Another terminal game in java, this time with a concept that allows for more players and a more complex game.",
     date: "2024-05",

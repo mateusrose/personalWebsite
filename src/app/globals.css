@@ -9,6 +9,7 @@
       --foreground: 225, 225, 225;
       --muted: 115, 115, 115;
       --accent: 224, 120, 255;
+      --accentdark: 220,40,200;
       --purple-ligth: 147, 112, 219; /* Add the alpha value */
       --purple-dark: 180, 100, 200; /* Add the alpha value */
     }
