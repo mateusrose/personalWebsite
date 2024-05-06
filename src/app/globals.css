@@ -3,13 +3,32 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: 27, 27, 27;
-    --foreground: 225, 225, 225;
-    --muted: 115, 115, 115;
-    --accent: 120 15 211;
+  @layer base {
+    :root {
+      --background: 27, 27, 27;
+      --foreground: 225, 225, 225;
+      --muted: 115, 115, 115;
+      --accent: 224, 120, 255;
+      --purple-ligth: 147, 112, 219; /* Add the alpha value */
+      --purple-dark: 180, 100, 200; /* Add the alpha value */
+    }
   }
 }
 
 @layer utilities {
+  .pause{
+    animation-play-state: paused;
+  }
+  .custom-bg{
+    @apply bg-background/20 border border-accent border-solid backdrop-blur-[6px] shadow-glass-inset hover:shadow-glass-sm
+  }
+}
+
+@keyframes move{
+  0%{
+    transform: translate(0,0);
+  }
+  100%{
+    transform: translate(100px, 100px);
+  }
 }
