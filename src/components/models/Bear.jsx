@@ -15,7 +15,7 @@ export default function Bear(props) {
   return (
     <group {...props} dispose={null}
     ref={modelRef}
-    position={[-0.8, -1, 0]}
+    position={[-0.8, -1, 1]}
     scale={[0.25, 0.25, 0.25]}
     rotation={[0, 350, 50]}
     >
