@@ -47,10 +47,27 @@ const AboutDetails = () => {
           </div>
         </ItemLayout>
 
-        <ItemLayout className={"col-span-6"}>
+        <ItemLayout className={"col-span-4 !p-0"}>
           <img
             className="w-full h-auto"
-            src="https://github-readme-stats.vercel.app/api?username=mateusrose&theme=radical"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=mateusrose&theme=transparent&hide_border=true&show&title_color=E078FF&show_icons=true&icon_color=E078FF&text_color=FFFFFF&text_bold=false"
+            alt="mateusrose"
+            loading="lazy"
+          ></img>
+        </ItemLayout>
+
+        <ItemLayout className={"col-span-8 !p-0"}>
+          <img
+            className="w-full h-auto"
+            src="https://github-readme-stats.vercel.app/api?username=mateusrose&theme=transparent&hide_border=true&show&title_color=E078FF&show_icons=true&icon_color=E078FF&text_color=FFFFFF&text_bold=false"
+            alt="mateusrose"
+            loading="lazy"
+          ></img>
+        </ItemLayout>
+        <ItemLayout className={"col-span-full !p-4"}>
+          <img
+            className="w-full h-auto"
+            src="https://skillicons.dev/icons?i=java,js,html,css,bash,bootstrap,discord,git,github,linux,mysql,react,vscode,postman,hibernate,idea,jquery,linkedin,maven,mint,vim,neovim,nodejs,npm,regex,spring,stackoverflow,tailwind,threejs,ubuntu"
             alt="mateusrose"
             loading="lazy"
           ></img>
