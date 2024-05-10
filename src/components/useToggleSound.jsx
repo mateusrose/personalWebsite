@@ -1,20 +1,31 @@
-import { useState, useEffect } from "react";
+"use client";
+import { useState, useEffect, useRef } from "react";
 
 export default function useToggleSound(link) {
-  const [audio, setAudio] = useState(null);
+  const audioRef = useRef(null);
 
   useEffect(() => {
-    const newAudio = new Audio("/audio/urbanbeat.mp3");
-    newAudio.volume = 0.5; // Set volume to half
-    setAudio(newAudio);
-  }, [link]);
+    if (audioRef.current === null) {
+      audioRef.current = new Audio("/audio/urbanbeat.mp3");
+      audioRef.current.volume = 0.02; // Set volume to half
+    }
+  }, []);
 
-  const startMusic = (event) => {
-    event.preventDefault();
-    if (audio) {
-      audio.play();
+  const toggleMusic = (event) => {
+    if (link === "/sound") {
+      event.preventDefault();
+      if (audioRef.current) {
+        if (audioRef.current.paused) {
+          audioRef.current.play();
+          localStorage.setItem("musicConsent", "true");
+        } else {
+          audioRef.current.pause();
+          audioRef.current.currentTime = 0;
+          localStorage.setItem("musicConsent", "false");
+        }
+      }
     }
   };
 
-  return startMusic;
+  return toggleMusic;
 }
