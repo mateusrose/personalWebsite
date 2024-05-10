@@ -21,7 +21,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.51.0",
     "sonner": "^1.4.3",
-    "three": "^0.162.0"
+    "three": "^0.164.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

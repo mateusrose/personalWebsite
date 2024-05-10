@@ -45,7 +45,7 @@ const Navigation = () => {
                 animate="show"
                 className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col space-y-5 items-start xs:items-center justify-center relative group"
               >
-                {BtnList.slice(0, BtnList.length / 2 + 1).map((btn, index) => {
+                {BtnList.slice(0, BtnList.length / 2 ).map((btn, index) => {
                   return <NavButton key={btn.label} x={0} y={0} {...btn} />;
                 })}
               </motion.div>
@@ -55,7 +55,7 @@ const Navigation = () => {
                 animate="show"
                 className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col space-y-5 items-end xs:items-center justify-center relative group"
               >
-                {BtnList.slice(BtnList.length / 2 + 1, BtnList.length).map(
+                {BtnList.slice(BtnList.length / 2 , BtnList.length).map(
                   (btn, index) => {
                     return (
                       <NavButton

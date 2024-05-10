@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { User, Palette, Github, Linkedin, NotebookText } from "lucide-react";
 import ResponsiveComponent from "../ResponsiveComponent";
 import clsx from "clsx";
 import { motion } from "framer-motion";
+import SoundIcon from "../SoundIcon";
+import  useToggleSound  from "../useToggleSound";
 
 const getIcon = (icon) => {
   switch (icon) {
@@ -17,6 +19,8 @@ const getIcon = (icon) => {
       return <Linkedin className="w-full h-auto" strokeWidth={1.5} />;
     case "resume":
       return <NotebookText className="w-full h-auto" strokeWidth={1.5} />;
+    case "sound":
+      return <SoundIcon />;
     default:
       return <User className="w-full h-auto" strokeWidth={1.5} />;
   }
@@ -37,6 +41,8 @@ const NavButton = ({
   newTab,
   lableDirection = "right",
 }) => {
+  const toggleSound = useToggleSound(link)
+
   return (
     <ResponsiveComponent>
       {({ size }) => {
@@ -46,6 +52,7 @@ const NavButton = ({
             style={{ transform: `translate(${x}, ${y})` }}
           >
             <NavLink
+              onClick={toggleSound}
               variants={item}
               className="text-foreground rounded-full flex items-center justify-center
               custom-bg
