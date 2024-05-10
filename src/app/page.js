@@ -5,7 +5,7 @@ import RenderModel from "@/components/RenderModel";
 import Bear from "@/components/models/Bear";
 import Navigation from "@/components/navigation/Navigation";
 import React from "react";
-import GlitchClip from "react-glitch-effect/src/GlitchClip";
+//import GlitchClip from "react-glitch-effect/src/GlitchClip";
 
 export default function Home() {
   return (

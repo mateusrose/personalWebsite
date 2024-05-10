@@ -3,7 +3,7 @@ import Image from "next/image";
 import bg from "../../../../public/background/backgroundtokyo.jpeg";
 import ProjectList from "@/components/projects/ProjectList";
 import { projectsData } from "../../data.js";
-import GlitchClip from "react-glitch-effect/src/GlitchClip";
+//import GlitchClip from "react-glitch-effect/src/GlitchClip";
 
 export default function Home() {
   return (
@@ -16,10 +16,10 @@ export default function Home() {
           className="object-cover object-center opacity-20"
         />
       </div>
-      <GlitchClip onHover={false} duration={10000}>
+     
         
       <ProjectList projects={projectsData} />
-     </GlitchClip>
+  
     </>
   );
 }
