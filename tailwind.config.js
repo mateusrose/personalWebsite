@@ -34,6 +34,9 @@ module.exports = {
         "spin-slow": "spin 30s linear infinite",
         "spin-slow-reverse": "spin 30s linear infinite reverse",
       },
+      screens: {
+        xs: "480px",
+      },
     },
   },
   plugins: [],

@@ -18,19 +18,19 @@ export default function Home() {
           className="object-cover object-center opacity-20"
         />
       </div>
-      <div className="w-full h-screen absolute top-1/2 -translate-y-1/2">
+      <div className="w-full h:3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2">
         <RenderModel>
           <BookSteampunk />
         </RenderModel>
       </div>
       <div className="relative w-full h-screen flex flex-col items-center justify-center">
-        <div className="absolute flex flex-col items-center text-center top-[52%] left-1/2 -translate-x-1/2">
-          <GlitchClip onHover={false}>
-            <h1 className="font-bold text-8xl text-accent">
+        <div className="absolute flex flex-col items-center text-center top-[46%] sm:top-[52%] left-1/2 -translate-x-1/2">
+          <GlitchClip onHover={false} duration={10000}>
+            <h1 className="font-bold text-5xl xs:text-6xl sm:text-7xl lg:text-8xl text-accent">
               Pedro Mateus Rosa
             </h1>
           </GlitchClip>
-          <h3 className="text-5xl text-accentdark">mateus rosé</h3>
+          <h3 className="text-2xl xs:text-3xl sx:text-4xl lg:text-5xl text-accentdark">mateus rosé</h3>
           <p className="font-light text-foreground text-ls">
             Meet the cyberpunk behind this page!
           </p>
