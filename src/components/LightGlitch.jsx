@@ -22,17 +22,16 @@ const LightGlitch = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-o w-full h-full -z-10 overflow-hidden">
+    <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
       {lights.map((light) => {
         return (
           <div
             key={light.id}
-            className="absolute rounded-full w-[10px] h-[10px] bg-light-radial shadow-glass-sm"
+            className="absolute rounded-full w-[10px] h-[10px] bg-light-radial shadow-glass-sm animate-glitch"
             style={{
               top: light.top,
               left: light.left,
               animation: `move ${light.animationDuration} infinite alternate`,
-            
             }}
           ></div>
         );

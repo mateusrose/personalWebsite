@@ -2,9 +2,13 @@
 import React from "react";
 import { BtnList } from "@/app/data";
 import NavButton from "./NavButton";
+import useScreenSize from "../hooks/useScreenSize";
 
 const Navigation = () => {
   const angleIncrement = 360 / BtnList.length;
+  const size =  useScreenSize();
+  const desktop = size >= 1024;
+  const tablet = size >= 768;
 
   return (
     <div className="w-full fixed h-screen flex items-center justify-center">
@@ -14,7 +18,6 @@ const Navigation = () => {
         const radius = 20; // adjust this value as needed
         const x = `${radius * Math.cos(angleRad) -2}vw`;
         const y = `${radius * Math.sin(angleRad)}vw`;
-        console.log(angleRad, radius, x, y);
         return <NavButton key ={btn.label} x={ x } y={ y } {...btn}/> 
        
        

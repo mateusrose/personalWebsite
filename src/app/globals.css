@@ -33,3 +33,23 @@
     transform: translate(100px, 100px);
   }
 }
+@keyframes glitch {
+  0% {
+    transform: translate(100px,0px);
+  }
+  20% {
+    transform: translate(-250px, 0px);
+  }
+  40% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    transform: translate(0px, 80px);
+  }
+  80% {
+    transform: translate(-100px, 0px);
+  }
+  100% {
+    transform: translate(-200px,0px);
+  }
+}
