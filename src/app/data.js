@@ -22,7 +22,7 @@ export const projectsData = [
     name: "CodeFighters",
     description:
       "First java game I was part of, a fighting game tekken-style for 2 players where each character was a teacher of mine.",
-    date: "2024-02",
+    date: "2024-02-17",
     demoLink: "https://www.linkedin.com/in/mateusrosecode/details/projects/",
   },
   {
@@ -30,7 +30,7 @@ export const projectsData = [
     name: "BattleShip terminal game",
     description:
       "Java terminal game where you the main goal was to deal with concurrency.",
-    date: "2024-03",
+    date: "2024-03-15",
     demoLink: "https://www.linkedin.com/in/mateusrosecode/details/projects/",
   },
   {
@@ -38,20 +38,20 @@ export const projectsData = [
     name: "Crimson Rosé",
     description:
       "Follow Lina in her pirating adventures while completing javascript code challenges.",
-    date: "2024-04",
+    date: "2024-04-19",
     demoLink: "https://www.linkedin.com/in/mateusrosecode/details/projects/",
   },
   {
     id: 4,
-    name: "Cyberpunk theme personal website @ making",
+    name: "Cyberpunk-theme personal website",
     description:
       "Project to experiment with tools I havent used before, like tailwindcss, nextjs and threejs.",
-    date: "2024-05",
+    date: "2024-05-10",
     demoLink: "https://www.linkedin.com/in/mateusrosecode/details/projects/",
   },
   {
     id: 5,
-    name: "Block Split or Steal @ at making",
+    name: "@@ Block Split or Steal",
     description:
       "Another terminal game in java, this time with a concept that allows for more players and a more complex game.",
     date: "2024-05",
@@ -88,3 +88,5 @@ export const BtnList = [
     newTab: true,
   },
 ];
+
+export const aboutMe = "Hey there, I'm Pedro Mateus Rosa, but you can call me the 'Code Bartender' - serving up solutions one line at a time! As a full stack developer, I blend the perfect mix of front-end finesse and back-end wizardry to craft seamless digital experiences. With a background in bartending, I've mastered the art of mixing the right ingredients to create something truly delightful, whether it's a complex web application or a refreshing cocktail. When I'm not typing away at my keyboard, you can find me exploring new technologies, sipping on a glass of Mateus Rosé (of course, but never at work!) or learning something new."

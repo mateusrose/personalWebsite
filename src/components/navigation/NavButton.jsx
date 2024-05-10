@@ -3,6 +3,7 @@ import Link from "next/link";
 import { User, Palette, Github, Linkedin, NotebookText } from "lucide-react";
 import ResponsiveComponent from "../ResponsiveComponent";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
 const getIcon = (icon) => {
   switch (icon) {
@@ -20,16 +21,32 @@ const getIcon = (icon) => {
       return <User className="w-full h-auto" strokeWidth={1.5} />;
   }
 };
-const NavButton = ({ x, y, label, link, icon, newTab, lableDirection="right" }) => {
+
+const item = {
+  hidden: { scale: 0 },
+  show: { scale: 1 },
+};
+const NavLink = motion(Link);
+
+const NavButton = ({
+  x,
+  y,
+  label,
+  link,
+  icon,
+  newTab,
+  lableDirection = "right",
+}) => {
   return (
     <ResponsiveComponent>
       {({ size }) => {
         return size && size >= 480 ? (
           <div
             className="absolute cursor-pointer z-50"
-            style={{ transform: `translate(${x}, ${y})`}}
+            style={{ transform: `translate(${x}, ${y})` }}
           >
-            <Link
+            <NavLink
+              variants={item}
               className="text-foreground rounded-full flex items-center justify-center
               custom-bg
               "
@@ -37,7 +54,6 @@ const NavButton = ({ x, y, label, link, icon, newTab, lableDirection="right" }) 
               href={link}
               target={newTab ? "_blank" : "_self"}
               name={label}
-              
             >
               <span className="relative w-14 h-14 p-4 animate-spin-slow-reverse group-hover:pause hover:text-accent">
                 {getIcon(icon)}
@@ -49,13 +65,12 @@ const NavButton = ({ x, y, label, link, icon, newTab, lableDirection="right" }) 
                   {label}
                 </span>
               </span>
-            </Link>
+            </NavLink>
           </div>
         ) : (
-          <div
-            className="w-fit cursor-pointer z-50"
-          >
-            <Link
+          <div className="w-fit cursor-pointer z-50">
+            <NavLink
+              variants={item}
               className="text-foreground rounded-full flex items-center justify-center
               custom-bg
               "
@@ -63,21 +78,24 @@ const NavButton = ({ x, y, label, link, icon, newTab, lableDirection="right" }) 
               href={link}
               target={newTab ? "_blank" : "_self"}
               name={label}
-              
             >
               <span className="relative xs:w-14 xs:h-14 p-4 group-hover:pause hover:text-accent">
                 {getIcon(icon)}
                 <span className="peer bg-transparent absolute top-0 left-0 w-full h-full"></span>
                 <span
-                  className={clsx("absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 bg-background text-foreground text-sm rounded-md shadow-lg whitespace-nowrap",lableDirection === "left" ? "right-full left-auto" : "")}>
+                  className={clsx(
+                    "absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 bg-background text-foreground text-sm rounded-md shadow-lg whitespace-nowrap",
+                    lableDirection === "left" ? "right-full left-auto" : ""
+                  )}
+                >
                   {label}
                 </span>
               </span>
-            </Link>
+            </NavLink>
           </div>
         );
       }}
-    </ResponsiveComponent>  
+    </ResponsiveComponent>
   );
 };
 

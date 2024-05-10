@@ -1,18 +1,7 @@
-import clsx from "clsx";
 import React from "react";
+import ItemLayout from "./ItemLayout";
+import { aboutMe } from "@/app/data";
 
-const ItemLayout = ({ children, className }) => {
-  return (
-    <div
-      className={clsx(
-        "custom-bg p-8 rounded-xl flex items-center justify-center",
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
-};
 
 const AboutDetails = () => {
   return (
@@ -24,19 +13,10 @@ const AboutDetails = () => {
           </h2>
           <br></br>
           <p className="font-light text-xs sm:text-sm md:text-base">
-            Hey there, I'm Pedro Mateus Rosa, but you can call me the "Code
-            Bartender" - serving up solutions one line at a time! As a full
-            stack developer, I blend the perfect mix of front-end finesse and
-            back-end wizardry to craft seamless digital experiences. With a
-            background in bartending, I've mastered the art of mixing the right
-            ingredients to create something truly delightful, whether it's a
-            complex web application or a refreshing cocktail. When I'm not
-            typing away at my keyboard, you can find me exploring new
-            technologies, sipping on a glass of Mateus Rosé (of course, but
-            never at work!) or learning something new.
+            {aboutMe}
           </p>
         </ItemLayout>
-        <ItemLayout className="col-span-full col-span-4">
+        <ItemLayout className="col-span-full sm:col-span-4">
           <div className="font-semibold w-full">
             At the moment @ React course @ projects
           </div>
@@ -47,7 +27,7 @@ const AboutDetails = () => {
           </div>
         </ItemLayout>
 
-        <ItemLayout className={"col-span-full sm:col-span-full sm:col-span-4 !p-0"}>
+        <ItemLayout className={"col-span-full sm:col-span-4 !p-0"}>
           <img
             className="w-full h-auto"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=mateusrose&theme=transparent&hide_border=true&show&title_color=E078FF&show_icons=true&icon_color=E078FF&text_color=FFFFFF&text_bold=false"
