@@ -25,7 +25,7 @@
 
 #### Audio 
 
-- Music by Soul Prod</a> from <a href="https://www.youtube.com/watch?v=L0EpLx6wnT8">link here</a>
+- Music by Soul Prod <a href="https://www.youtube.com/watch?v=L0EpLx6wnT8">link here</a>
 
 ---
 
