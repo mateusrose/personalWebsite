@@ -28,8 +28,8 @@ const Sound = () => {
         animate={{ scale: 1 }}
         transition={{ delay: 1 }}
         className="w-12 h-12 xs:w-14 xs:h-14 text-foreground rounded-full flex items-center justify-center z-50 p-2.5 xs:p-4 custom-bg"
-        aria-label={"home"}
-        name={"home"}
+        aria-label={"sound"}
+        name={"sound"}
       >
         {isPlaying ? (
           <Volume2

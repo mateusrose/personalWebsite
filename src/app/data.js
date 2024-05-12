@@ -23,7 +23,7 @@ export const projectsData = [
     description:
       "First java game I was part of, a fighting game tekken-style for 2 players where each character was a teacher of mine.",
     date: "2024-02-17",
-    demoLink: "https://www.linkedin.com/in/mateusrosecode/details/projects/",
+    demoLink: "https://mateusrose.itch.io/code-fighters",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const projectsData = [
     description:
       "Java terminal game where you the main goal was to deal with concurrency.",
     date: "2024-03-15",
-    demoLink: "https://www.linkedin.com/in/mateusrosecode/details/projects/",
+    demoLink: "https://github.com/mateusrose/battleShipCode",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const projectsData = [
     description:
       "Follow Lina in her pirating adventures while completing javascript code challenges.",
     date: "2024-04-19",
-    demoLink: "https://www.linkedin.com/in/mateusrosecode/details/projects/",
+    demoLink: "https://myhackathonproject.netlify.app/",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const projectsData = [
     description:
       "Project to experiment with tools I havent used before, like tailwindcss, nextjs and threejs.",
     date: "2024-05-10",
-    demoLink: "https://www.linkedin.com/in/mateusrosecode/details/projects/",
+    demoLink: "https://github.com/mateusrose/personalWebsite",
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ export const projectsData = [
     description:
       "Another terminal game in java, this time with a concept that allows for more players and a more complex game.",
     date: "2024-05",
-    demoLink: "https://www.linkedin.com/in/mateusrosecode/details/projects/",
+    demoLink: "https://github.com/mateusrose/blockBattle",
   },
 ];
 
