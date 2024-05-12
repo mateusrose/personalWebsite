@@ -18,7 +18,7 @@ export default function Home() {
           className="object-cover object-center opacity-20"
         />
       </div>
-      <div className="w-full h:3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2">
+      <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2">
         <RenderModel>
           <BookSteampunk />
         </RenderModel>

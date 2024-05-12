@@ -87,12 +87,7 @@ export const BtnList = [
     icon: "resume",
     newTab: true,
   },
-  {
-    label: "Sound",
-    link: "/sound",
-    icon: "sound",
-    newTab: false,
-  }
+  
 ];
 
 export const aboutMe = "Hey there, I'm Pedro Mateus Rosa, but you can call me the 'Code Bartender' - serving up solutions one line at a time! As a full stack developer, I blend the perfect mix of front-end finesse and back-end wizardry to craft seamless digital experiences. With a background in bartending, I've mastered the art of mixing the right ingredients to create something truly delightful, whether it's a complex web application or a refreshing cocktail. When I'm not typing away at my keyboard, you can find me exploring new technologies, sipping on a glass of Mateus Rosé (of course, but never at work!) or learning something new."

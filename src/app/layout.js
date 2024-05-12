@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
 import LightGlitch from "@/components/LightGlitch";
+import Sound from "@/components/Sound";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
        
           {children}
           <LightGlitch />
+          <Sound />
        
       </body>
     </html>
