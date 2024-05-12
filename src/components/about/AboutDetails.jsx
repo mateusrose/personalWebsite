@@ -28,6 +28,7 @@ const AboutDetails = () => {
         </ItemLayout>
 
         <ItemLayout className={"col-span-full sm:col-span-4 !p-0"}>
+        
           <img
             className="w-full h-auto"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=mateusrose&theme=transparent&hide_border=true&show&title_color=E078FF&show_icons=true&icon_color=E078FF&text_color=FFFFFF&text_bold=false"
