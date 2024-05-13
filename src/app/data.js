@@ -57,6 +57,14 @@ export const projectsData = [
     date: "2024-05",
     demoLink: "https://github.com/mateusrose/blockBattle",
   },
+  {
+    id: 6,
+    name: "@@ Quarkus RESTfull API",
+    description:
+      "Learning how to do RESTfull APIs with Quarkus, a java framework.",
+    date: "2024-05-12",
+    demoLink: "",
+  }
 ];
 
 export const BtnHome = {
