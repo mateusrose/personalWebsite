@@ -63,7 +63,7 @@ export const projectsData = [
     description:
       "Learning how to do RESTfull APIs with Quarkus, a java framework.",
     date: "2024-05-12",
-    demoLink: "",
+    demoLink: "https://github.com/mateusrose/calendarrest",
   }
 ];
 
