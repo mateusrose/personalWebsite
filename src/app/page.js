@@ -7,6 +7,10 @@ import Navigation from "@/components/navigation/Navigation";
 import React from "react";
 //import GlitchClip from "react-glitch-effect/src/GlitchClip";
 
+/**
+ * Renders the Home page component.
+ * @returns {JSX.Element} The rendered Home page component.
+ */
 export default function Home() {
   return (
     <>

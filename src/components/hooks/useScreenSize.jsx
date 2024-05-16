@@ -2,6 +2,10 @@
 
 import { useEffect, useState } from "react";
 
+/**
+ * Custom hook that returns the current screen size.
+ * @returns {number} The current screen size.
+ */
 const useScreenSize = () => {
   const [screenSize, setScreenSize] = useState();
 
