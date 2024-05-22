@@ -59,11 +59,19 @@ export const projectsData = [
   },
   {
     id: 6,
-    name: "@@ Quarkus RESTfull API",
+    name: "Quarkus RESTfull API",
     description:
       "Learning how to do RESTfull APIs with Quarkus, a java framework.",
     date: "2024-05-12",
     demoLink: "https://github.com/mateusrose/calendarrest",
+  },
+  {
+    id: 7,
+    name: ".NET 8 REST API using ASP.NETCore",
+    description:
+        "Learning how to do RESTfull APIs in .NET8!",
+    date: "2024-05-22",
+    demoLink: "https://github.com/mateusrose/barberdotnet",
   }
 ];
 
